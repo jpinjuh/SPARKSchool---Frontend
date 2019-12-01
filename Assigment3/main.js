@@ -29,11 +29,11 @@ uploadZone.addEventListener('drop', (e) => {
     const files = e.dataTransfer.files;
     
     for(let i = 0; i < files.length; i++){
-        if(e.dataTransfer.types[i] === 'Files'){
+        if(e.dataTransfer.items[i].kind === 'file'){
             console.log(`
                 Ime datoteke: ${files[i].name}
                 Veličina datoteke: ${(files[i].size/1024/1024).toFixed(2)}MB
-                Tip datoteke: ${e.dataTransfer.types[i]}
+                Tip datoteke: ${e.dataTransfer.items[i].kind}
                 Datoteka je zadnji put modificirana prije ${dateDiffInDays(new Date, new Date(files[i].lastModified))} dana.
             `);
         } else{
