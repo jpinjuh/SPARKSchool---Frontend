@@ -30,7 +30,6 @@ uploadZone.addEventListener('drop', (e) => {
     
     for(let i = 0; i < files.length; i++){
         if(e.dataTransfer.types[i] === 'Files'){
-            let d1 = new Date(files[i].lastModified);
             console.log(`
                 Ime datoteke: ${files[i].name}
                 Veličina datoteke: ${(files[i].size/1024/1024).toFixed(2)}MB
