@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(238, 238, 238);
+}
+
+.upload-zone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 600px;
+  height: 400px;
+  color: rgb(199, 199, 199);
+  font-size: 24px;
+  border: 2px dashed rgb(199, 199, 199);
+}
+
+.upload-zone:after {
+  content: "Drag your file here!";
+}
+
+.dragover {
+  border: 2px solid rgb(255, 111, 111);
+  color: rgb(255, 111, 111);
+}
+
+.dragover:after {
+  content: "Drop it here like it's hot!";
+}
+
+.drop:after {
+    content: "You dropped file"
+}
