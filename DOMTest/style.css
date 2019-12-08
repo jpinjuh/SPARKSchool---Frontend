@@ -1,0 +1,97 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Roboto;
+    color: rgb(58, 43, 114);
+}
+/* ========== 1. zadatak ==========*/
+#form input[type='text'],
+#form input[type='password'] {
+    width: 250px;
+    height: 30px;
+    display: block;
+    font-size: 14px;
+    padding-left: 16px;
+    margin: 10px 10px;
+    outline: none;
+    border: 1px solid rgb(221, 221, 221);
+}
+
+#form input[type='submit']{
+    width: 125px;
+    margin: 0px 10px;
+    padding: 15px 0;
+    font-size: 14px;
+    background-color: rgb(145, 139, 167);
+    color: white;
+    border: none;
+}
+
+#form div {
+    margin:10px 10px;
+}
+
+/* ========== 2. zadatak ========== */
+#container {
+    width: 1000px;
+}
+
+#list-wrapper, 
+#dropzone {
+    margin: 40px 10px;
+    width: 475px;
+    padding: 30px 50px;
+    min-height: 450px;
+    background-color: rgb(243, 243, 243);
+    border: 1px solid rgb(235, 235, 235);
+    box-sizing: border-box;
+}
+
+#list-wrapper {
+    float:left;
+}
+
+#dropzone {
+    float: right;
+}
+
+#list-wrapper button {
+    padding: 15px 0px;
+    margin: 0 0 20px 0;
+    font-size: 14px;
+    width: 120px;
+    background-color: rgb(145, 139, 167);
+    color: white;
+    border: none;
+}
+
+#list li, 
+#dropzone li {
+    padding: 30px 20px;
+    list-style-type: none;
+    border: 1px solid rgb(221, 221, 221);
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.05);
+}
+
+#list li:nth-child(2n), 
+#dropzone li:nth-child(2n){
+	background-color: #f5e4e4;
+}
+
+#list li:nth-child(2n + 1), 
+#dropzone li:nth-child(2n + 1){
+	background-color: #e9ecf5;
+}
+
+h2 {
+    margin-bottom: 30px;
+    width: 100px;
+    padding-bottom: 15px;
+    border-bottom-width: 1rem;
+    color: rgb(58, 43, 114);
+    border-bottom: 2px solid  rgb(58, 43, 114);
+}
