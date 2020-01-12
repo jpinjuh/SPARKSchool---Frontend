@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Library</title>
+</head>
+<body>
+
+    <input type="text" id="search-author" placeholder="Search autors...">
+
+    <form id="author-form">
+        <input type="text" id="name" name="name" placeholder="Name...">
+        <input type="text" id="author-genre" name="genre" placeholder="Genre...">
+        <input type="text" id="book" name="book" placeholder="Book...">
+        <input type="submit" value="Add new author">
+    </form>
+
+    <table border=1>
+        <thead>
+            <th>Name</th>
+            <th>Genre</th>
+            <th>Book</th>
+        </thead>
+        <tbody id="author-list">
+
+        </tbody>    
+    </table>
+
+    <hr>
+    
+    <input type="text"id="search-book" placeholder="Search books...">
+
+    <form id="book-form">
+        <input type="text" id="title" name="title" placeholder="Title...">
+        <input type="text" id="book-genre" name="genre" placeholder="Genre...">
+        <input type="text" id="author" name="author" placeholder="Author...">
+        <input type="submit" value="Add new book">
+    </form>
+
+    <table border=1>
+        <thead>
+            <th>Title</th>
+            <th>Genre</th>
+            <th>Author</th>
+        </thead>
+        <tbody id="book-list">
+
+        </tbody>    
+    </table>
+    <hr>
+
+    <script src="main.js"></script>
+</body>
+</html>

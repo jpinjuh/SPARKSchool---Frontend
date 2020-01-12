@@ -41,7 +41,7 @@ const message = document.createElement('div');
 function displayMessage(text, color){
     message.innerText = text;
     message.style.color = color;
-    form.insertBefore(message, resetBtn)
+    form.insertBefore(message, resetBtn);
 }
 
 // adding style when entering data: red - wrong entry, green - correct entry
