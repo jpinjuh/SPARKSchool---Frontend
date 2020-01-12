@@ -133,7 +133,6 @@ bookSearch.addEventListener('keyup', function() {
 
 // adding a submit event to authorForm
 authorForm.addEventListener('submit', (e) => {
-
     // getting a value of input fields
     const name = document.getElementById('name').value,
           genre = document.getElementById('author-genre').value,
@@ -146,7 +145,6 @@ authorForm.addEventListener('submit', (e) => {
 
 // adding a submit event to bookForm
 bookForm.addEventListener('submit', (e) => {
-
     // getting a value of input fields 
     const title = document.getElementById('title').value,
           genre = document.getElementById('book-genre').value,
